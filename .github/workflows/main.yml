@@ -1,12 +1,11 @@
-name: MyAction
-on: push
-
+name: Project build
+on: workflow_dispatch
 jobs:
-  MyBuild:
+  helloworld:
     runs-on: windows-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v5.0.0
+      - name: step1
+        run: echo "Hello, world!!"
 
-    - name: Step2      
-      run: dotnet run
+      - name: step2
+        run: dotnet --info
