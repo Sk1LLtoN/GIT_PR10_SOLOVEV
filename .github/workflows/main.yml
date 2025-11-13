@@ -1,7 +1,7 @@
-name: Project build
-on: workflow_dispatch
+name: MyAction
+on: push
 jobs:
-  helloworld:
+  MyBuild:
     runs-on: windows-latest
     steps:
       - name: step1
